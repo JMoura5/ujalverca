@@ -617,8 +617,8 @@ function initMap() {
 
 $(document).on('ready', function () {
     var width = $('body').width();
-    width > 500 ? width = 500 : width - 20;
-
+    width = width > 500 ? width : width - 60;
+    
     $("#news > .container").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fujalverca& \
         tabs=timeline&width='+ width + '&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" \
         width="' + width +'" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>');
