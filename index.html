@@ -164,10 +164,6 @@
             <h2 class="h1 text-uppercase u-heading-v8__title g-font-weight-700 g-font-size-26 g-mb-10">Últimas Notícias</h2>
             <p class="mb-0">Vê o nosso Facebook, onde podes estar a par das nossas novidades!</p>
         </div>
-
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fujalverca&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-        width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-
     </div>
 </section>
 <!-- End Section Content -->
@@ -547,12 +543,12 @@
 
                 <div class="col-md-8 col-lg-10">
                     <div class="row">
-                        <span class="partner">
+                        <span class="partner col-lg-4 col-sm-12">
                             <a title="Sabores do Norte" href="https://www.facebook.com/pg/Sabores-do-Norte-491099820925256/" target="_blank">
                                 <img src="img/saboresdonorte.png">
                             </a>
                         </span>
-                        <span class="partner">
+                        <span class="partner col-lg-4 col-sm-12">
                             <a title="Gravomanos" href="http://www.gravomanos.pt/" target="_blank">
                                 <img src="img/gravomanos.png">
                             </a>
@@ -620,6 +616,12 @@ function initMap() {
 }
 
 $(document).on('ready', function () {
+    var width = $('body').width();
+    width > 500 ? width = 500 : width - 20;
+
+    $("#news > .container").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fujalverca& \
+        tabs=timeline&width='+ width + '&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" \
+        width="' + width +'" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>');
     // initialization of carousel
     $.HSCore.components.HSCarousel.init('.js-carousel');
 
