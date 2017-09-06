@@ -30,3 +30,21 @@ span.shop {
 .g-color-secondary {
     color: #4670bb;
 }
+
+.active-team {
+    background-color: #9c0b0b !important;
+    color: #fff;
+}
+
+.team-list li {
+    cursor: pointer;
+}
+
+.team-list li:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}
