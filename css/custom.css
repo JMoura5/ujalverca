@@ -10,6 +10,23 @@ span.shop {
     border-color: #1c2c46;*/
 }
 
+/*screen-xs*/
+@media (max-width: 768px) {
+  .custom-text-align{text-align:center;}
+}
+/*screen-sm*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .custom-text-align{text-align:left;}
+}
+/*screen-md*/
+@media (min-width: 992px) and (max-width: 1200px) {
+  .custom-text-align{text-align:left;}
+}
+/*screen-lg corresponds with col-lg*/
+@media (min-width: 1200px) {
+  .custom-text-align{text-align:left}
+}
+
 #news iframe {
     margin-right: 20px;
 }
