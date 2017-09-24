@@ -3,6 +3,9 @@ span.partner {
     margin-bottom: 10px;
 }
 
+.player {
+    max-width: 240px;
+}
 span.shop {
     height: 300px;
     margin-bottom: 10px;
